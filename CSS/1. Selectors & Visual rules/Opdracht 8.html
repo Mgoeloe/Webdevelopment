@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .voorbeeld {
+            color: red;
+            color: blue;
+        }
+        .voorbeeld2 {
+            color: red;
+        }
+        span {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Opdracht 8</h1>
+
+    <strong>Cascade:</strong>
+    <p>
+        Zijn de voorrangsregels voor CSS commando's. Als er twee gelijkwaardige 
+        commando's zijn, wordt de laatstgebruikte commando gebruikt.
+    </p>
+
+    <div class="voorbeeld">
+        <p>
+        Voorbeeld: In CSS wordt deze tekst rood en blauw gekleurd. Blauw wordt toegepast, omdat dit het laatste commando is.
+        </p>
+    </div>
+    <br>
+
+    <strong>Inheritance:</strong>
+    <p>
+        Sommige CSS commando's die op een element zijn toegepast hebben ook invloed op de elementen die 
+        daarin genest zijn (de child elements) als deze geen specifieke styling krijgen toegepast.
+    </p>
+
+    <div class="voorbeeld2">
+
+        <p>
+            Voorbeeld: Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span>blablabla</span> Voluptas repudiandae neque amet natus, earum hic expedita omnis voluptate facere in.
+        </p>
+    </div>
+</body>
+</html>
