@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .figuur{
+            position: relative;
+            display: inline-block;
+        }
+
+        .figuur2{
+            position: relative;
+            display: inline-block;
+            left: 250px;
+        }
+
+        .figuur3{
+            position: relative;
+            display: inline-block;
+            left: 500px;
+        }
+
+        .dot {
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            background-color: black;
+            border-radius: 50%;
+            display: inline-block;
+            left: 26px;
+        }
+
+        .figuur::after {
+            content: "";
+            position: absolute;
+            height: 60px;
+            width: 200px;
+            background-color: black;
+            border-radius: 50px;
+            top: 45px;
+        }
+
+        .figuur2::after {
+            content: "";
+            position: absolute;
+            height: 60px;
+            width: 200px;
+            background-color: black;
+            border-radius: 50px;
+            top: 45px;
+        }
+
+        .figuur3::after {
+            content: "";
+            position: absolute;
+            height: 60px;
+            width: 200px;
+            background-color: black;
+            border-radius: 50px;
+            top: 45px;
+        }
+        
+        /* .figuur::before {
+            content: "$";
+            position: absolute;
+            color: rgb(255, 255, 255);
+            left: 100px;
+            top: 65px;
+            z-index: 1;      
+        } */
+        
+        h2 {
+            position: absolute;
+            color: rgb(255, 255, 255);
+            left: 70px;
+            top: 42px;
+            z-index: 1;
+            
+        }
+
+        .klein1 {
+            position: inherit;
+            height: 3px;
+            width: 3px;
+            background-color: white;
+            border-radius: 1px;
+            right: 80px;
+        } 
+
+        .klein2 {
+            position: inherit;
+            height: 3px;
+            width: 3px;
+            background-color: white;
+            border-radius: 1px;
+            left: 77px;
+            top: 25px;
+        } 
+        
+    </style>
+</head>
+<body>
+    <h1>Opdracht 6</h1>
+    <div class="figuur">
+        
+        <div class="dot">
+            <div class="dot2">
+                <h2>
+                    <span class="klein1"></span> 
+                    1
+                    <span class="klein2"></span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="figuur2">
+        
+        <div class="dot">
+            <div class="dot2">
+                <h2>
+                    <span class="klein1"></span> 
+                    2
+                    <span class="klein2"></span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="figuur3">
+      
+        <div class="dot">
+            <div class="dot2">
+                <h2>
+                    <span class="klein1"></span> 
+                    3
+                    <span class="klein2"></span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

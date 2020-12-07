@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+             
+        .tekst {
+            position: relative;
+            width: 600px;
+        }
+
+        p {
+            border: solid black 1px;
+            padding: 25px;
+        }
+
+        .tekst::before {
+            background: url(../IMG/bergen.jpg);
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Opdracht 5</h1>
+
+<div class="tekst">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolore sequi dicta eius dignissimos nostrum officiis non odit iure? Distinctio voluptates nisi, aut aliquid provident, culpa autem sunt amet sint nulla consectetur molestias quam deserunt inventore porro non? Aliquid, quia velit? Error sequi repellendus itaque necessitatibus velit! Aliquam atque quaerat molestias enim accusamus incidunt omnis asperiores? Aut magnam blanditiis minima nemo reiciendis voluptate id earum vitae quos cum. Est vel ullam quidem aperiam, tenetur nesciunt consequatur non pariatur delectus quis reprehenderit fugiat maxime voluptates perspiciatis dolore, molestiae incidunt quasi nam? Veritatis quaerat quibusdam tempore illo praesentium numquam ut omnis nesciunt!</p>
+
+</div>
+
+</body>
+</html>
