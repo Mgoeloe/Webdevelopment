@@ -7,12 +7,12 @@
     <style>
         .container {
             border: solid black 1px;
-            display: flex;
-            flex-direction: column;
+            /* display: flex; */
+            /* flex-direction: column; */
             background-color: blanchedalmond;
             width: 800px;
             padding: 2px;
-            transition-property: left, right;
+            transition: all 2s ease-in-out;         
         }
 
         .container div {
@@ -23,11 +23,36 @@
             margin: 2px;
         }
 
-        .figuur1 {
-            align-self: flex-end;
-           
-            transition-duration: 2s;
-                       
+        .container:hover div {
+            transform: translateX(744px);
+            background-color: red;
+        }
+
+        .container:hover .figuur1{         
+            transition-duration: 2s; 
+            border-radius: 50%;         
+        }
+
+        .container:hover .figuur2 {         
+            transition-duration: 4s;  
+            border-radius: 25%;        
+        }
+
+        .container:hover .figuur3 {         
+            transition-duration: 2.5s;          
+        }
+
+        .container:hover .figuur4 {         
+            transition-duration: 3s;          
+        }
+
+        .container:hover .figuur5 {         
+            transition-duration: 4s; 
+            transition-timing-function: cubic-bezier(0,1.83,.48,-1.1);         
+        }
+
+        .figuur4 {
+            background-color: white;
         }
 
     </style>
@@ -40,7 +65,7 @@
         <div class="figuur3"><p>3</p></div>
         <div class="figuur4"><p>4</p></div>
         <div class="figuur5"><p>5</p></div>
-        <div class="figuur6"><p>6</p></div>
+       
 
 
     </div>
