@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            
+        }
+
+        .container div {
+            display: inline-block;
+            height: 300px;
+            width: 200px;
+            border: black 1px solid;
+            border-radius: 25px;
+            text-align: center;
+
+        }
+
+        .container div:not(:first-child) {
+        margin-left: -50px;
+        }
+
+        .container div:hover {
+        transform: translatex(50px);
+        transition: 0.4s ease-out;
+}
+
+        /* .kaart1~.kaart4 {
+            margin-left: ;
+        } */
+
+        .container h1 {
+            margin-top: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Opdracht 6</h1>
+    <div class="container">
+        <div class="kaart1"><h1>Placeholder</h1></div>
+        <div class="kaart2"><h1>Placeholder</h1></div>
+        <div class="kaart3"><h1>Placeholder</h1></div>
+        <div class="kaart4"><h1>Placeholder</h1></div>
+    </div>
+</body>
+</html>

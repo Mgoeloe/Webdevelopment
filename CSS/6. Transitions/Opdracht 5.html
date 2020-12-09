@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            left: 400px;
+            height: 600px;
+            border: black 1px solid;
+            padding: 10px;
+        }
+
+        img {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: black 6px solid;
+            z-index: 0;
+        }
+
+        .box {
+            position: absolute;
+            width: 201px;
+            height: 201px;
+            margin-left: 6px;
+            margin-top: 6px;
+            background-color: red;
+            z-index: 0;
+        }
+
+        .box3 {
+            position: absolute;
+            width: 201px;
+            height: 201px;
+            margin-left: 6px;
+            margin-top: 6px;
+            background-color: rgba(255, 0, 0, 0);
+            z-index: 0;
+        }
+
+        .container:hover .box {
+            transform: translate(150px, 150px) rotate(45deg);  
+            transition: 2s;
+        }
+
+        .container:hover .box3 {
+            background-color: rgba(255, 0, 0, 0.479);
+            transition: 2s;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <h1>Opdracht 5</h1>
+    <div class="container">
+        <div>
+            <img src="../IMG/hond.jpg" alt="">
+            <div class="box"></div>
+            <div class="box3"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -13,7 +13,8 @@
         width: 800px;
         height: 400px;
         padding: 2px;
-        
+        transition: all 3s ease-in-out;
+        transition: top 2s linear 1s, transform 1s ease-in-out 1s;
     }
 
     .container div {
@@ -27,13 +28,31 @@
         margin: 2px;
     }
 
-    .figuur1 {
-        
-
+    .container:hover .figuur1{
+        top: 1px;
+        transform: translateX(370px);
+        /* transition-property: top, left; */
+        transition: 2s;
+        /* transition-delay: 1s; */
     }
 
-    .container:hover .figuur1{
-        top: 100px;
+    .container:hover .figuur2{
+        top: 1px;
+        transform: translateX(-372px);
+        /* transition-property: top, left; */
+        transition: 2s;
+        /* transition-delay: 0s, 1s; */
+    }
+
+    .container:hover .figuur3{
+        /* top: 346px; */
+        /* transform: translateX(372px); */
+        left: 0px;
+        top: 86%;
+        
+        /* transition-property: left, top; */
+        transition: 2s;
+        /* transition-delay: 3s; */
     }
 
 
