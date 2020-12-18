@@ -1,0 +1,22 @@
+button {
+  background-color: blue;
+  color: red;
+}
+
+button:hover {
+  background-color: green;
+  color: purple;
+}
+
+.colorChangingSquare {
+  background-color: red;
+  width: 300px;
+  height: 300px;
+}
+
+.colorChangingSquare:hover {
+  background-color: blue;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+/*# sourceMappingURL=style.css.map */
