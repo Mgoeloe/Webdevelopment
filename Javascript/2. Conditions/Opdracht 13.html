@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Translate months</h1>
+    <input type="number" name="number" id="number">
+    <button onclick="translateMonth()">translate</button>
+    <div id="translatedMonth">
+        <span id="MaandTekst"></span>
+    </div>
+    <script>
+        function translateMonth() {
+            let Maand = document.getElementById("number").value;
+            if (Maand == 1) {
+                document.getElementById("MaandTekst").innerHTML = "Januari";
+            }
+            if (Maand == 2) {
+                document.getElementById("MaandTekst").innerHTML = "Februari";
+            }
+            if (Maand == 3) {
+                document.getElementById("MaandTekst").innerHTML = "Maart";
+            } 
+            if (Maand == 4) {
+                document.getElementById("MaandTekst").innerHTML = "April";
+            } 
+            if (Maand == 5) {
+                document.getElementById("MaandTekst").innerHTML = "Mei";
+            } 
+            if (Maand == 6) {
+                document.getElementById("MaandTekst").innerHTML = "Juni";
+            } 
+            if (Maand == 7) {
+                document.getElementById("MaandTekst").innerHTML = "Juli";
+            } 
+            if (Maand == 8) {
+                document.getElementById("MaandTekst").innerHTML = "Augustus";
+            } 
+            if (Maand == 9) {
+                document.getElementById("MaandTekst").innerHTML = "September";
+            }
+            if (Maand == 10 ) {
+                document.getElementById ("MaandTekst").innerHTML = "Oktober";
+            }
+            if (Maand == 11 ) {
+                document.getElementById ("MaandTekst").innerHTML = "November";
+            }
+            if (Maand == 12 ) {
+                document.getElementById ("MaandTekst").innerHTML = "December";
+            }
+        }
+    </script>
+</body>
+
+</html>
