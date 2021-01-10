@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+    <p id="answer"></p>
+    <input type="text" id="inputNaam">
+    <button onclick="check()">Check naam</button>
+    <script>
+        function check() {
+            // let naam = new Array("John", "Olly", "Mo", "Hendrik", "Tony");
+            let naam = ("John");
+            let naam1 = ("Olly");
+            let naam2 = ("Mo");
+            let naam3 = ("Hendrik");
+            let naam4 = ("Tony");
+            
+            let inputNaam = document.getElementById("inputNaam").value;
+
+            // if (inputNaam == naam || naam1 || naam2 || naam3 || naam4) {
+            if (inputNaam == naam) {
+                console.log("Dit is een bekende van ons:");
+            }
+
+            else if (inputNaam == naam1) {
+                    console.log("Dit is een bekende van ons:");
+            }
+
+            else if (inputNaam == naam2) {
+                    console.log("Dit is een bekende van ons:");
+            }
+
+            else if (inputNaam == naam3) {
+                    console.log("Dit is een bekende van ons:");
+            }
+
+            else if (inputNaam == naam4) {
+                    console.log("Dit is een bekende van ons:");
+            }
+
+            else {
+                console.log("Onbekend in ons systeem!");
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
