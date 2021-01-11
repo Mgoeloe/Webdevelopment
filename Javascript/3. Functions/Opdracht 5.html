@@ -12,42 +12,105 @@ initial-scale=1.0">
     <p id="answer"></p>
     <input type="text" id="inputNaam">
     <button onclick="check()">Check naam</button>
+
+    <p id="answer"></p>
+    <button id="randomNaam" onclick="random()">Random naam</button>
+
+    <!-- <p id="answer"></p>
+    <button id="checkRandom" onclick="checkRandom()">Check Random naam</button> -->
+
     <script>
+        let naamLijst = ["John", "Olly", "Mo", "Hendrik", "Tony", "Irus", "Jan", "Peter"];
+        let naam = ("John");
+        let naam1 = ("Olly");
+        let naam2 = ("Mo");
+        let naam3 = ("Hendrik");
+        let naam4 = ("Tony");
+
+
         function check() {
-            // let naam = new Array("John", "Olly", "Mo", "Hendrik", "Tony");
-            let naam = ("John");
-            let naam1 = ("Olly");
-            let naam2 = ("Mo");
-            let naam3 = ("Hendrik");
-            let naam4 = ("Tony");
-            
             let inputNaam = document.getElementById("inputNaam").value;
 
             // if (inputNaam == naam || naam1 || naam2 || naam3 || naam4) {
             if (inputNaam == naam) {
-                console.log("Dit is een bekende van ons:");
+                console.log("John is een bekende van ons.");
             }
 
             else if (inputNaam == naam1) {
-                    console.log("Dit is een bekende van ons:");
+                console.log("Olly is een bekende van ons.");
             }
 
             else if (inputNaam == naam2) {
-                    console.log("Dit is een bekende van ons:");
+                console.log("Mo is een bekende van ons.");
             }
 
             else if (inputNaam == naam3) {
-                    console.log("Dit is een bekende van ons:");
+                console.log("Hendrik is een bekende van ons.");
             }
 
             else if (inputNaam == naam4) {
-                    console.log("Dit is een bekende van ons:");
+                console.log("Tony is een bekende van ons.");
             }
 
             else {
                 console.log("Onbekend in ons systeem!");
             }
         }
+
+        function random() {
+            let rand = naamLijst[~~(Math.random() * naamLijst.length)];
+            console.log(rand);
+
+            if (rand == naam) {
+                console.log("John is een bekende van ons.");
+            }
+
+            else if (rand == naam1) {
+                console.log("Olly is een bekende van ons.");
+            }
+
+            else if (rand == naam2) {
+                console.log("Mo is een bekende van ons.");
+            }
+
+            else if (rand == naam3) {
+                console.log("Hendrik is een bekende van ons.");
+            }
+
+            else if (rand == naam4) {
+                console.log("Tony is een bekende van ons.");
+            }
+
+            else {
+                console.log("Onbekend in ons systeem!");
+            }
+        }
+
+        // function checkRandom() {
+        //     if (rand == naam) {
+        //         console.log("John is een bekende van ons.");
+        //     }
+
+        //     else if (rand == naam1) {
+        //         console.log("Olly is een bekende van ons.");
+        //     }
+
+        //     else if (rand == naam2) {
+        //         console.log("Mo is een bekende van ons.");
+        //     }
+
+        //     else if (rand == naam3) {
+        //         console.log("Hendrik is een bekende van ons.");
+        //     }
+
+        //     else if (rand == naam4) {
+        //         console.log("Tony is een bekende van ons.");
+        //     }
+
+        //     else {
+        //         console.log("Onbekend in ons systeem!");
+        //     }
+        // }
 
 
     </script>
