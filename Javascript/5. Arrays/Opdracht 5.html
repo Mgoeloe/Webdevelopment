@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Opdracht 5</h1>
+
+    <button onclick="chooseFruit()">Random Fruit</button>
+
+    <script>
+        function chooseFruit() {
+
+            let fruits = ["Mango", "Citroen", "Perzik", "Kers", "Ananas"];
+            console.log(fruits);
+
+            let numbers = [0, 1, 9, 2, 8, 3, 7, 4, 6, 5];
+            //  console.log(~~math.random(Numbers));
+
+            let randomNumber = numbers [~~(Math.random() * numbers.length)];
+            console.log(randomNumber);
+
+                // if (randomNumber > 4) {
+                //     randomNumber = numbers[~~(Math.random() * numbers.length)]; 
+                // }
+
+            // let modulo = randomNumber % fruits.lenght;
+            // console.log(fruits.length);
+
+            let randomFruit = (fruits[randomNumber%5]);
+            console.log(randomFruit);
+
+            
+        }
+    </script>
+</body>
+
+</html>

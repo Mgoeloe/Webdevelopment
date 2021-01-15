@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Opdracht 6</h1>
+
+    <script>
+        let fruits = ["Mango", "Citroen", "Perzik", "Kers", "Ananas"];
+        console.log(fruits);
+
+        // .sort() sorteert de inhoud van de array op alfabetische volgorde.
+        let waardesSorteren = fruits.sort();
+        console.log(fruits);
+
+        // .push() voegt een waarder toe aan het einde van een array.
+        let waardeToevoegen = fruits.push("Framboos");
+        console.log(fruits);
+
+        // .pop() verwijderd de laatste waarde uit een array.
+        let waardeDeleteLast = fruits.pop();
+        console.log(fruits);
+
+        // .pop() verwijderd de eerste waarde uit een array.
+        let waardeDeleteFirst = fruits.shift();
+        console.log(fruits);
+
+        // .slice() kan een deel uit een array extraheren. De arry zelf wordt niet aangepast.
+        let waardeSlice = fruits.slice(1, 3);
+        console.log(waardeSlice);
+
+        // .splice() verwijderd waarden uit een array. De verwijderde waarden kunnen gereturned worden.
+        let waardeSplice = fruits.splice(1, 3);
+        console.log(fruits);
+
+    </script>
+
+
+</body>
+
+</html>
