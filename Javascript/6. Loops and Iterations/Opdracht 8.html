@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Opdracht 8</h1>
+
+    <script>
+        let result;
+        let a = 0;
+        let b = 1;
+        for (i = 0; i <= 50; i++) {
+            if (i == 0) {
+                result = 0;
+            }
+            else
+                result = a + b;
+            console.log(i, result)
+            a = b;
+            b = result;
+        }
+
+        // a + (a + b) = c;
+
+    </script>
+
+
+</body>
+
+</html>
