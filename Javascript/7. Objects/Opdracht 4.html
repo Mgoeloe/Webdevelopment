@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Opdracht 2</h1>
+
+    <div id="clubs" class="clubs"></div>
+
+    <script>
+        function ClubInfo(naam, sportType, aantalLeden, Contactgegevens) {
+            this.naam = naam;
+            this.sportType = sportType;
+            this.aantalLeden = aantalLeden;
+            this.Contactgegevens = function(adres, telefoonnummer, contactpersoon) {
+                this.adres = adres;
+                this.telefoonnummer = telefoonnummer;
+                this.contactpersoon = contactpersoon;
+            }
+        }  
+        
+        let club1 = new ClubInfo();
+
+        console.log(ClubInfo);
+
+    </script>
+
+
+
+
+</body>
+</html>
