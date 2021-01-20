@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Opdracht 7</h1>
+
+    <button class="knop" onclick="spelen()">Steen</button>
+    <button class="knop" onclick="spelen()">Papier</button>
+    <button class="knop" onclick="spelen()">Schaar</button>
+
+
+    <script>
+        // const game = function(steen, papier, schaar){
+
+        // }
+        let steen = true;
+        let papier = true;
+        let schaar = true;
+
+        function spelen(){
+
+            if (steen + papier) {
+                return false
+            }       else if (steen + steen) {
+                    return null
+            }
+
+            if (papier + schaar) {
+                return false
+            }       else if (papier + papier) {
+                    return null
+            }
+
+            if (schaar + steen) {
+                return false
+            }       else if (schaar + schaar) {
+                    return null
+            }
+        }
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
