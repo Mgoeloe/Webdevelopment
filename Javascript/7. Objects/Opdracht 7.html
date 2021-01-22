@@ -10,46 +10,78 @@
 <body>
     <h1>Opdracht 7</h1>
 
-    <button class="knop" onclick="spelen()">Steen</button>
-    <button class="knop" onclick="spelen()">Papier</button>
-    <button class="knop" onclick="spelen()">Schaar</button>
+    <button class="knop" onclick="steen()">Steen ✊</button>
+    <button class="knop" onclick="papier()">Papier ✋🏽</button>
+    <button class="knop" onclick="schaar()">Schaar ✌🏽</button>
+    <!-- <button class="knop" onclick="keuzeTegenstander()">Tegenstander</button> -->
+    <br><br>
+    <span class="result"> </span>
 
 
     <script>
-        // const game = function(steen, papier, schaar){
+        const keuze= ["steen ✊", "papier✋🏽", "schaar✌🏽"];
+        const steen1 = keuze[0];
+        const papier1 = keuze[1];
+        const schaar1 = keuze[2];
+        const result = document.querySelector(".result").innerHTML
 
-        // }
-        let steen = true;
-        let papier = true;
-        let schaar = true;
-
-        function spelen(){
-
-            if (steen + papier) {
-                return false
-            }       else if (steen + steen) {
-                    return null
+        function keuzeTegenstander(){
+            let randomKeuze = keuze [~~(Math.random() * keuze.length)];
+            return randomKeuze;
             }
 
-            if (papier + schaar) {
-                return false
-            }       else if (papier + papier) {
-                    return null
+        function steen(){
+            console.log(keuze[0]);
+            let uitkomst = keuzeTegenstander();
+            if (uitkomst == papier1) {
+                console.log("you lost");
+                document.querySelector(".result").innerHTML = `De tegenstander koos ${uitkomst}. Jij hebt verloren`;
+            }      
+            if (uitkomst == schaar1) {
+                console.log("you won");
+                document.querySelector(".result").innerHTML = `De tegenstander koos ${uitkomst}. Jij hebt gewonnen!!`;
             }
+            if (uitkomst == steen1) {
+                console.log("gelijk spel");
+                document.querySelector(".result").innerHTML = `De tegenstander koos ${uitkomst}. Het is een gelijkspel!`;
+            }
+                // console.log(`test${a}`);
+        }
 
-            if (schaar + steen) {
-                return false
-            }       else if (schaar + schaar) {
-                    return null
+        function papier(){
+            console.log(keuze[0]);
+            let uitkomst = keuzeTegenstander();
+            if (uitkomst == schaar1) {
+                console.log("you lost");
+                document.querySelector(".result").innerHTML = `De tegenstander koos ${uitkomst}. Jij hebt verloren`;
+            }      
+            if (uitkomst == steen1) {
+                console.log("you won");
+                document.querySelector(".result").innerHTML = `De tegenstander koos ${uitkomst}. Jij hebt gewonnen!!`;
+            }
+            if (uitkomst == papier1) {
+                console.log("gelijk spel");
+                document.querySelector(".result").innerHTML = `De tegenstander koos ${uitkomst}. Het is een gelijkspel!`;
             }
         }
 
-
-
+        function schaar(){
+            console.log(keuze[0]);
+            let uitkomst = keuzeTegenstander();
+            if (uitkomst == steen1) {
+                console.log("you lost");
+                document.querySelector(".result").innerHTML = `De tegenstander koos ${uitkomst}. Jij hebt verloren`;
+            }      
+            if (uitkomst == papier1) {
+                console.log("you won");
+                document.querySelector(".result").innerHTML = `De tegenstander koos ${uitkomst}. Jij hebt gewonnen!!`;
+            }
+            if (uitkomst == schaar1) {
+                console.log("gelijk spel");
+                document.querySelector(".result").innerHTML = `De tegenstander koos ${uitkomst}. Het is een gelijkspel!`;
+            }
+        }
     </script>
-
-
-
 
 </body>
 
