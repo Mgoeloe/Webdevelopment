@@ -12,29 +12,29 @@
 
     <div class="rekenmachine">
         <div class="scherm">
-            <span class="som"></span>
+            <span class="som" id="idSom"></span>
         </div>
 
         <div class="knoppen">
-            <button class="knop offWhite" id="ac">AC</button>
-            <button class="knop offWhite" id="plusMin">+/-</button>
-            <button class="knop offWhite" id="modulo">%</button>
-            <button class="knop orange" id="delen">/</button>
-            <button class="knop" id="7">7</button>
-            <button class="knop" id="8">8</button>
-            <button class="knop" id="9">9</button>
-            <button class="knop orange" id="keer">X</button>
-            <button class="knop" id="4">4</button>
-            <button class="knop" id="5">5</button>
-            <button class="knop" id="6">6</button>
-            <button class="knop orange" id="min">-</button>
-            <button class="knop" id="1">1</button>
-            <button class="knop" id="2">2</button>
-            <button class="knop" id="3">3</button>
-            <button class="knop orange" id="plus">+</button>
-            <button class="knop knop0" id="0" onclick="input0()">0</button>
-            <button class="knop" id="punt">.</button>
-            <button class="knop orange" id="is">=</button>
+            <button class="knop offWhite" id="ac" onclick= "inputAC()">     AC</button>
+            <button class="knop offWhite" id="plusMin" onclick="inputPlusMin()">+/-</button>
+            <button class="knop offWhite" id="modulo" onclick="inputModulo()">%</button>
+            <button class="knop orange" id="delen" onclick="inputDelen()">  /</button>
+            <button class="knop" id="7" onclick="input7()">                 7</button>
+            <button class="knop" id="8" onclick="input8()">                 8</button>
+            <button class="knop" id="9" onclick="input9()">                 9</button>
+            <button class="knop orange" id="keer" onclick="inputKeer()">    X</button>
+            <button class="knop" id="4" onclick="input4()">                 4</button>
+            <button class="knop" id="5" onclick="input5()">                 5</button>
+            <button class="knop" id="6" onclick="input6()">                 6</button>
+            <button class="knop orange" id="min" onclick="inputMin()">      -</button>
+            <button class="knop" id="1" onclick="input1()">                 1</button>
+            <button class="knop" id="2" onclick="input2()">                 2</button>
+            <button class="knop" id="3" onclick="input3()">                 3</button>
+            <button class="knop orange" id="plus" onclick="inputPlus()">    +</button>
+            <button class="knop knop0" id="0" onclick="input0()">           0</button>
+            <button class="knop" id="punt" onclick="inputPunt()">           .</button>
+            <button class="knop orange" id="is" onclick="inputIs()">        =</button>
 
         </div>
         
@@ -50,11 +50,137 @@
         // function input0(){
         //     console.log(knop0);
         // }
+
+        // const cijfers = [0,1,2,3,4,5,6,7,8,9];
+        // function input(cijfer){
+        //     // console.log();
+        //     for(i=0, cijfer=)
+        //     document.querySelector(".som").innerHTML = "1";
+
+        // }
+
+        function getal() {return document.getElementById("idSom").innerHTML};
+        // function newInput() { return document.queryselector(".knop").value= a};
+            let test = document.getElementById("1").innerHTML;
+        // let nieuwgetal = a + b
+        console.log(test);
+        console.log(newInput);
+
+
+
         function input0(){
-            console.log(0);
-            document.querySelector(".som").innerHTML = "test";
+            // console.log(0);
+            document.querySelector(".som").innerHTML = getal() + "0";
+            // alert(getal);
+        }
+
+        function input1(){
+            console.log(1);
+            document.querySelector(".som").innerHTML = getal() + test;
+            
+        }
+
+        function input2(){
+            console.log(2);
+            document.querySelector(".som").innerHTML = getal() + "2";
+;
 
         }
+
+        function input3(){
+            console.log(3);
+            document.querySelector(".som").innerHTML = getal() + "3";
+;
+
+        }
+
+        function input4(){
+            console.log(4);
+            document.querySelector(".som").innerHTML = getal() + "4";
+
+        }
+
+        function input5(){
+            console.log(5);
+            document.querySelector(".som").innerHTML = getal() + "5";
+
+        }
+
+        function input6(){
+            console.log(6);
+            document.querySelector(".som").innerHTML = getal() + "6";
+
+        }
+
+        function input7(){
+            console.log(7);
+            document.querySelector(".som").innerHTML = getal() + "7";
+
+        }
+
+        function input8(){
+            console.log(8);
+            document.querySelector(".som").innerHTML = getal() + "8";
+
+        }
+
+        function input9(){
+            console.log(9);
+            document.querySelector(".som").innerHTML = getal() + "9";
+
+        }
+
+        function inputPunt(){
+            document.querySelector(".som").innerHTML = getal() + "."; 
+
+        }    
+
+        function inputAC(){
+            // console.log();
+            document.querySelector(".som").innerHTML = null;
+
+        }
+
+        function inputPlusMin(){
+            // console.log();
+            document.querySelector(".som").innerHTML = getal() - getal() * 2;
+
+        }
+
+        function inputModulo(){
+            // console.log();
+            document.querySelector(".som").innerHTML = getal() + "%";
+
+        }
+
+        function inputDelen(){
+            document.querySelector(".som").innerHTML = getal() + "/"; 
+
+        }       
+        
+        function inputKeer(){
+            document.querySelector(".som").innerHTML = getal() + "*"; 
+
+        }       
+
+        function inputMin(){
+            document.querySelector(".som").innerHTML = getal() + "-"; 
+
+        }
+
+        function inputPlus(){
+            document.querySelector(".som").innerHTML = getal() + "+"; 
+
+        }
+
+        function inputIs() {
+            document.querySelector(".som").innerHTML = eval(getal()).toFixed(2);
+            if (getal() != null ) {
+                document.getElementById("ac").innerText = "C";
+            }
+        }
+
+
 
     </script>
 
