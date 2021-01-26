@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="Eindopdracht.css">
 
 </head>
+
 <body>
     <h1>Eindopdracht</h1>
 
@@ -16,168 +18,133 @@
         </div>
 
         <div class="knoppen">
-            <button class="knop offWhite" id="ac" onclick= "inputAC()">     AC</button>
+            <button class="knop offWhite" id="ac" onclick="inputAC()"> AC</button>
             <button class="knop offWhite" id="plusMin" onclick="inputPlusMin()">+/-</button>
             <button class="knop offWhite" id="modulo" onclick="inputModulo()">%</button>
-            <button class="knop orange" id="delen" onclick="inputDelen()">  /</button>
-            <button class="knop" id="7" onclick="input7()">                 7</button>
-            <button class="knop" id="8" onclick="input8()">                 8</button>
-            <button class="knop" id="9" onclick="input9()">                 9</button>
-            <button class="knop orange" id="keer" onclick="inputKeer()">    X</button>
-            <button class="knop" id="4" onclick="input4()">                 4</button>
-            <button class="knop" id="5" onclick="input5()">                 5</button>
-            <button class="knop" id="6" onclick="input6()">                 6</button>
-            <button class="knop orange" id="min" onclick="inputMin()">      -</button>
-            <button class="knop" id="1" onclick="input1()">                 1</button>
-            <button class="knop" id="2" onclick="input2()">                 2</button>
-            <button class="knop" id="3" onclick="input3()">                 3</button>
-            <button class="knop orange" id="plus" onclick="inputPlus()">    +</button>
-            <button class="knop knop0" id="0" onclick="input0()">           0</button>
-            <button class="knop" id="punt" onclick="inputPunt()">           .</button>
-            <button class="knop orange" id="is" onclick="inputIs()">        =</button>
-
+            <button class="knop orange" id="delen" onclick="inputDelen()"> /</button>
+            <button class="knop" id="7" onclick="input7()"> 7</button>
+            <button class="knop" id="8" onclick="input8()"> 8</button>
+            <button class="knop" id="9" onclick="input9()"> 9</button>
+            <button class="knop orange" id="keer" onclick="inputKeer()"> X</button>
+            <button class="knop" id="4" onclick="input4()"> 4</button>
+            <button class="knop" id="5" onclick="input5()"> 5</button>
+            <button class="knop" id="6" onclick="input6()"> 6</button>
+            <button class="knop orange" id="min" onclick="inputMin()"> -</button>
+            <button class="knop" id="1" onclick="input1()"> 1</button>
+            <button class="knop" id="2" onclick="input2()"> 2</button>
+            <button class="knop" id="3" onclick="input3()"> 3</button>
+            <button class="knop orange" id="plus" onclick="inputPlus()"> +</button>
+            <button class="knop knop0" id="0" onclick="input0()"> 0</button>
+            <button class="knop" id="punt" onclick="inputPunt()"> .</button>
+            <button class="knop orange" id="is" onclick="inputIs()"> =</button>
         </div>
-        
-
-
     </div>
 
 
     <script>
-        // let span = document.getElementById("span").innerHTML
-        // let knop0 = document.getElementById("0").value
-        // log(input0);
-        // function input0(){
-        //     console.log(knop0);
-        // }
+      
+        document.querySelectorAll('.orange').forEach(function (obj) {
+            obj.addEventListener('mousedown', function () {
+                this.style.backgroundColor = "whitesmoke";
+                this.style.color = "orange";
+            })
+            obj.addEventListener('mouseup', function () {
+                this.style.backgroundColor = "orange";
+                this.style.color = "whitesmoke";
 
-        // const cijfers = [0,1,2,3,4,5,6,7,8,9];
-        // function input(cijfer){
-        //     // console.log();
-        //     for(i=0, cijfer=)
-        //     document.querySelector(".som").innerHTML = "1";
+            })
+        });
 
-        // }
+        function getal() {
+            document.getElementById("ac").innerText = "C";
+            return document.getElementById("idSom").innerHTML;
+        };
 
-        function getal() {return document.getElementById("idSom").innerHTML};
-        // function newInput() { return document.queryselector(".knop").value= a};
-            let test = document.getElementById("1").innerHTML;
-        // let nieuwgetal = a + b
-        console.log(test);
-        console.log(newInput);
-
-
-
-        function input0(){
-            // console.log(0);
+        function input0() {
             document.querySelector(".som").innerHTML = getal() + "0";
-            // alert(getal);
         }
 
-        function input1(){
-            console.log(1);
-            document.querySelector(".som").innerHTML = getal() + test;
-            
+        function input1() {
+            document.querySelector(".som").innerHTML = getal() + "1";
         }
 
-        function input2(){
-            console.log(2);
+        function input2() {
             document.querySelector(".som").innerHTML = getal() + "2";
-;
-
         }
 
-        function input3(){
-            console.log(3);
+        function input3() {
             document.querySelector(".som").innerHTML = getal() + "3";
-;
-
         }
 
-        function input4(){
-            console.log(4);
+        function input4() {
             document.querySelector(".som").innerHTML = getal() + "4";
-
         }
 
-        function input5(){
-            console.log(5);
+        function input5() {
             document.querySelector(".som").innerHTML = getal() + "5";
-
         }
 
-        function input6(){
-            console.log(6);
+        function input6() {
             document.querySelector(".som").innerHTML = getal() + "6";
-
         }
 
-        function input7(){
-            console.log(7);
+        function input7() {
             document.querySelector(".som").innerHTML = getal() + "7";
-
         }
 
-        function input8(){
-            console.log(8);
+        function input8() {
             document.querySelector(".som").innerHTML = getal() + "8";
-
         }
 
-        function input9(){
-            console.log(9);
+        function input9() {
             document.querySelector(".som").innerHTML = getal() + "9";
-
         }
 
-        function inputPunt(){
-            document.querySelector(".som").innerHTML = getal() + "."; 
+        function inputPunt() {
+            document.querySelector(".som").innerHTML = getal() + ".";
+        }
 
-        }    
-
-        function inputAC(){
-            // console.log();
+        function inputAC() {
             document.querySelector(".som").innerHTML = null;
-
+            document.getElementById("ac").innerText = "AC";
         }
 
-        function inputPlusMin(){
-            // console.log();
+        function inputPlusMin() {
             document.querySelector(".som").innerHTML = getal() - getal() * 2;
-
         }
 
-        function inputModulo(){
-            // console.log();
+        function inputModulo() {
             document.querySelector(".som").innerHTML = getal() + "%";
-
         }
 
-        function inputDelen(){
-            document.querySelector(".som").innerHTML = getal() + "/"; 
-
-        }       
-        
-        function inputKeer(){
-            document.querySelector(".som").innerHTML = getal() + "*"; 
-
-        }       
-
-        function inputMin(){
-            document.querySelector(".som").innerHTML = getal() + "-"; 
-
+        function inputDelen() {
+            document.querySelector(".som").innerHTML = getal() + "/";
         }
 
-        function inputPlus(){
-            document.querySelector(".som").innerHTML = getal() + "+"; 
+        function inputKeer() {
+            document.querySelector(".som").innerHTML = getal() + "*";
+        }
 
+        function inputMin() {
+            document.querySelector(".som").innerHTML = getal() + "-";
+        }
+
+        function inputPlus() {
+            document.querySelector(".som").innerHTML = getal() + "+";
         }
 
         function inputIs() {
-            document.querySelector(".som").innerHTML = eval(getal()).toFixed(2);
-            if (getal() != null ) {
-                document.getElementById("ac").innerText = "C";
+            let getal2 = getal();
+            let antwoord = eval(getal()).toFixed(2);
+            document.querySelector(".som").innerHTML = antwoord;
+            let lastCharacter = getal2.charAt(getal2.length-1);
+            if (lastCharacter == NAN) {
+                return antoord * 2;
+                // console.log(antwoord);
+
             }
+            console.log(lastCharacter);
+
         }
 
 
@@ -185,4 +152,5 @@
     </script>
 
 </body>
+
 </html>
