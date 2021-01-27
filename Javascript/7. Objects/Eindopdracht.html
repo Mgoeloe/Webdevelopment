@@ -21,19 +21,19 @@
             <button class="knop offWhite" id="ac" onclick="inputAC()"> AC</button>
             <button class="knop offWhite" id="plusMin" onclick="inputPlusMin()">+/-</button>
             <button class="knop offWhite" id="modulo" onclick="inputModulo()">%</button>
-            <button class="knop orange" id="delen" onclick="inputDelen()"> /</button>
+            <button class="knop orange operator" id="delen" onclick="inputDelen()"> /</button>
             <button class="knop" id="7" onclick="input7()"> 7</button>
             <button class="knop" id="8" onclick="input8()"> 8</button>
             <button class="knop" id="9" onclick="input9()"> 9</button>
-            <button class="knop orange" id="keer" onclick="inputKeer()"> X</button>
+            <button class="knop orange operator" id="keer" onclick="inputKeer()"> X</button>
             <button class="knop" id="4" onclick="input4()"> 4</button>
             <button class="knop" id="5" onclick="input5()"> 5</button>
             <button class="knop" id="6" onclick="input6()"> 6</button>
-            <button class="knop orange" id="min" onclick="inputMin()"> -</button>
+            <button class="knop orange operator" id="min" onclick="inputMin()"> -</button>
             <button class="knop" id="1" onclick="input1()"> 1</button>
             <button class="knop" id="2" onclick="input2()"> 2</button>
             <button class="knop" id="3" onclick="input3()"> 3</button>
-            <button class="knop orange" id="plus" onclick="inputPlus()"> +</button>
+            <button class="knop orange operator" id="plus" onclick="inputPlus()"> +</button>
             <button class="knop knop0" id="0" onclick="input0()"> 0</button>
             <button class="knop" id="punt" onclick="inputPunt()"> .</button>
             <button class="knop orange" id="is" onclick="inputIs()"> =</button>
@@ -134,18 +134,25 @@
         }
 
         function inputIs() {
-            let getal2 = getal();
+            // let getal2 = document.querySelector(".som").innerHTML;
+            // console.log(getal2);
+            // let operands = document.querySelectorAll(".operator");
+            // console.log(operands);
             let antwoord = eval(getal()).toFixed(2);
             document.querySelector(".som").innerHTML = antwoord;
-            let lastCharacter = getal2.charAt(getal2.length-1);
-            if (lastCharacter == NAN) {
-                return antoord * 2;
-                // console.log(antwoord);
+            
+            // let lastCharacter = getal2.charAt(getal2.length-1);
+            // console.log(lastCharacter);
+            // if (lastCharacter == "+") {
+            //     getal2= getal2.pop();
+            //     console.log(getal2);
+            
 
-            }
-            console.log(lastCharacter);
-
+          
         }
+
+
+        // }
 
 
 

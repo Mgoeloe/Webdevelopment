@@ -1,0 +1,19 @@
+table {
+    border: black solid 2px;
+    border-collapse: collapse;
+}
+
+td {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border: black solid 1px;
+}
+
+tr:nth-child(3n) {
+    border-bottom: black solid 2px;
+}
+
+td:nth-child(3n) {
+    border-right: black solid 2px;
+}
