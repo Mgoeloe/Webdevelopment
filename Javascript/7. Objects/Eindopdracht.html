@@ -110,7 +110,10 @@
         }
 
         function inputPlusMin() {
-            document.querySelector(".som").innerHTML = getal() - getal() * 2;
+            function convertGetal() {
+                
+            }
+            document.querySelector(".som").innerHTML = getal() *- 1;
         }
 
         function inputModulo() {
@@ -138,7 +141,7 @@
             // console.log(getal2);
             // let operands = document.querySelectorAll(".operator");
             // console.log(operands);
-            let antwoord = eval(getal()).toFixed(2);
+            let antwoord = parseFloat(eval(getal()).toFixed(2));
             document.querySelector(".som").innerHTML = antwoord;
             
             // let lastCharacter = getal2.charAt(getal2.length-1);
