@@ -1,0 +1,91 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Helvetica;
+}
+
+.bg {
+  background-image: url("../img/DSC_0374.JPG");
+  height: 60%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg2 {
+    padding: 0 15% 0 15%;
+    background-color: black;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    /* position: absolute; */
+    background-color:black;
+    opacity: 50%;
+    color: whitesmoke;
+    width: 100%;
+    padding: 2% 0% 2% 0%;
+    
+} 
+
+nav a{
+    color: whitesmoke;
+    font-size: x-large;
+    margin-left: 2%;
+    text-decoration: none;
+}
+
+.banner{
+  top: 40%;
+  /* height: 40px; */
+  /* padding-left: 60%; */
+  text-align: center;
+  position: relative;
+  background-color:black;
+  opacity: 50%;
+  color: whitesmoke;
+  width: 100%;
+  /* padding: 2% 0% 2% 2%; */
+}
+
+.banner p{
+  /* height: 40%; */
+  width:inherit;
+  position: relative;
+  /* left: 30%; */
+  color: whitesmoke;
+  font-size: large;
+  /* margin-right: 2%; */
+  /* text-decoration: none; */
+  width: 100%;
+  margin: 0;
+}
+
+.about_text{
+    top: 10%;
+    /* height: 40px; */
+    /* padding-left: 60%; */
+    text-align: center;
+    position: relative;
+    background-color:black;
+    opacity: 50%;
+    color: whitesmoke;
+    width: 100%;
+}
+
+.about_text p{
+    /* height: 40%; */
+  width:inherit;
+  position: relative;
+  /* left: 30%; */
+  color: whitesmoke;
+  font-size: large;
+  /* margin-right: 2%; */
+  /* text-decoration: none; */
+  width: 100%;
+  margin: 0;
+
+}
