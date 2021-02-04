@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Eindopdracht.css">
+
+</head>
+
+<body>
+    <h1>Eindopdracht</h1>
+
+    <div class="rekenmachine">
+        <div class="scherm">
+            <span class="som" id="idSom"></span>
+        </div>
+
+        <div class="knoppen">
+            <button class="knop offWhite" id="ac" onclick="inputAC()"> AC</button>
+            <button class="knop offWhite" id="plusMin" onclick="inputPlusMin()">+/-</button>
+            <button class="knop offWhite" id="modulo" onclick="inputModulo()">%</button>
+            <button class="knop orange operator" id="delen" onclick="inputDelen()"> /</button>
+            <button class="knop" id="7" onclick="input7()"> 7</button>
+            <button class="knop" id="8" onclick="input8()"> 8</button>
+            <button class="knop" id="9" onclick="input9()"> 9</button>
+            <button class="knop orange operator" id="keer" onclick="inputKeer()"> X</button>
+            <button class="knop" id="4" onclick="input4()"> 4</button>
+            <button class="knop" id="5" onclick="input5()"> 5</button>
+            <button class="knop" id="6" onclick="input6()"> 6</button>
+            <button class="knop orange operator" id="min" onclick="inputMin()"> -</button>
+            <button class="knop" id="1" onclick="input1()"> 1</button>
+            <button class="knop" id="2" onclick="input2()"> 2</button>
+            <button class="knop" id="3" onclick="input3()"> 3</button>
+            <button class="knop orange operator" id="plus" onclick="inputPlus()"> +</button>
+            <button class="knop knop0" id="0" onclick="input0()"> 0</button>
+            <button class="knop" id="punt" onclick="inputPunt()"> .</button>
+            <button class="knop orange" id="is" onclick="inputIs()"> =</button>
+        </div>
+    </div>
+
+
+    <script>
+      
+        document.querySelectorAll('.orange').forEach(function (obj) {
+            obj.addEventListener('mousedown', function () {
+                this.style.backgroundColor = "whitesmoke";
+                this.style.color = "orange";
+            })
+            obj.addEventListener('mouseup', function () {
+                this.style.backgroundColor = "orange";
+                this.style.color = "whitesmoke";
+
+            })
+        });
+
+        function getal() {
+            document.getElementById("ac").innerText = "C";
+            return document.getElementById("idSom").innerHTML;
+        };
+
+        function input0() {
+            document.querySelector(".som").innerHTML = getal() + "0";
+        }
+
+        function input1() {
+            document.querySelector(".som").innerHTML = getal() + "1";
+        }
+
+        function input2() {
+            document.querySelector(".som").innerHTML = getal() + "2";
+        }
+
+        function input3() {
+            document.querySelector(".som").innerHTML = getal() + "3";
+        }
+
+        function input4() {
+            document.querySelector(".som").innerHTML = getal() + "4";
+        }
+
+        function input5() {
+            document.querySelector(".som").innerHTML = getal() + "5";
+        }
+
+        function input6() {
+            document.querySelector(".som").innerHTML = getal() + "6";
+        }
+
+        function input7() {
+            document.querySelector(".som").innerHTML = getal() + "7";
+        }
+
+        function input8() {
+            document.querySelector(".som").innerHTML = getal() + "8";
+        }
+
+        function input9() {
+            document.querySelector(".som").innerHTML = getal() + "9";
+        }
+
+        function inputPunt() {
+            document.querySelector(".som").innerHTML = getal() + ".";
+        }
+
+        function inputAC() {
+            document.querySelector(".som").innerHTML = null;
+            document.getElementById("ac").innerText = "AC";
+        }
+
+        function inputPlusMin() {
+            function convertGetal() {
+                
+            }
+            document.querySelector(".som").innerHTML = getal() *- 1;
+        }
+
+        function inputModulo() {
+            document.querySelector(".som").innerHTML = getal() + "%";
+        }
+
+        function inputDelen() {
+            document.querySelector(".som").innerHTML = getal() + "/";
+        }
+
+        function inputKeer() {
+            document.querySelector(".som").innerHTML = getal() + "*";
+        }
+
+        function inputMin() {
+            document.querySelector(".som").innerHTML = getal() + "-";
+        }
+
+        function inputPlus() {
+            document.querySelector(".som").innerHTML = getal() + "+";
+        }
+
+        function inputIs() {
+            // let getal2 = document.querySelector(".som").innerHTML;
+            // console.log(getal2);
+            // let operands = document.querySelectorAll(".operator");
+            // console.log(operands);
+            let antwoord = parseFloat(eval(getal()).toFixed(2));
+            document.querySelector(".som").innerHTML = antwoord;
+            
+            // let lastCharacter = getal2.charAt(getal2.length-1);
+            // console.log(lastCharacter);
+            // if (lastCharacter == "+") {
+            //     getal2= getal2.pop();
+            //     console.log(getal2);
+            
+
+          
+        }
+
+
+        // }
+
+
+
+    </script>
+
+</body>
+
+</html>
