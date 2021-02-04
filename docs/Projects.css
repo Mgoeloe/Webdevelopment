@@ -5,7 +5,7 @@ body, html {
 }
 
 .bg {
-  background-image: url("../img/laptop3.jfif");
+  background-image: url("./img/laptop3.jfif");
   height: 60%; 
   background-position: center;
   background-repeat: no-repeat;
