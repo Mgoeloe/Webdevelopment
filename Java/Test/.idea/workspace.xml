@@ -20,6 +20,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/test4_ScannerMethod.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -33,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.test1">
+  <component name="RunManager" selected="Application.test6_IfStatement">
     <configuration name="test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test1" />
       <module name="Project1" />
@@ -48,8 +51,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test3_BasicMathOperations" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test3_BasicMathOperations" />
+    <configuration name="test4_ScannerMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test4_ScannerMethod" />
+      <module name="Project1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test5_Comparisons" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test5_Comparisons" />
+      <module name="Project1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test6_IfStatement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test6_IfStatement" />
       <module name="Project1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -57,9 +74,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.test6_IfStatement" />
+        <item itemvalue="Application.test5_Comparisons" />
+        <item itemvalue="Application.test4_ScannerMethod" />
         <item itemvalue="Application.test1" />
         <item itemvalue="Application.test2_VariablesAndDatatypes" />
-        <item itemvalue="Application.test3_BasicMathOperations" />
       </list>
     </recent_temporary>
   </component>
@@ -84,5 +103,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
