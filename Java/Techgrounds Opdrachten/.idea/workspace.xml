@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09bbe071-d9df-48fd-8814-f090a9fdea73" name="Default Changelist" comment="" />
+    <list default="true" id="09bbe071-d9df-48fd-8814-f090a9fdea73" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Test/src/test7_Oefenopdracht_CarSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Techgrounds Opdrachten/loops_8c.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Techgrounds Opdrachten/loops_8c.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/loops_8c.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loops_8c.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,5 +152,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

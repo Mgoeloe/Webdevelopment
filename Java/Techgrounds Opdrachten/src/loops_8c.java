@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+
 
 public class loops_8c {
 
@@ -12,7 +14,7 @@ public class loops_8c {
 ////            System.out.println(i);
 //            if (i )
 //        }
-   
+
         for (String a : cars){
             if (a == eastcars[0] || a == eastcars[1]){
                 System.out.println("ok");
@@ -23,6 +25,9 @@ public class loops_8c {
             }
 
         }
-            System.out.println(westcars);
+        Collections.sort(westcars);
+        System.out.println(westcars);
+
+
     }
 }

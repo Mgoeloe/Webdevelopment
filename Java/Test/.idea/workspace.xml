@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5e5f6b0a-7d16-4035-a1c4-6a07cd6d6b8d" name="Default Changelist" comment="" />
+    <list default="true" id="5e5f6b0a-7d16-4035-a1c4-6a07cd6d6b8d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test7_Oefenopdracht_CarSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Techgrounds Opdrachten/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Techgrounds Opdrachten/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Techgrounds Opdrachten/out/production/Techgrounds Opdrachten/loops_8c.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Techgrounds Opdrachten/out/production/Techgrounds Opdrachten/loops_8c.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Techgrounds Opdrachten/src/loops_8c.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Techgrounds Opdrachten/src/loops_8c.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,16 +52,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.test6_IfStatement">
+  <component name="RunManager" selected="Application.test7_Oefenopdracht_CarSelector">
     <configuration name="test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test1" />
-      <module name="Project1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test2_VariablesAndDatatypes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test2_VariablesAndDatatypes" />
       <module name="Project1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -82,13 +81,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test7_Oefenopdracht_CarSelector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test7_Oefenopdracht_CarSelector" />
+      <module name="Project1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.test7_Oefenopdracht_CarSelector" />
         <item itemvalue="Application.test6_IfStatement" />
         <item itemvalue="Application.test5_Comparisons" />
         <item itemvalue="Application.test4_ScannerMethod" />
         <item itemvalue="Application.test1" />
-        <item itemvalue="Application.test2_VariablesAndDatatypes" />
       </list>
     </recent_temporary>
   </component>
