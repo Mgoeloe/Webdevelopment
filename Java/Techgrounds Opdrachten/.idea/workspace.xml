@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09bbe071-d9df-48fd-8814-f090a9fdea73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Test/src/test7_Oefenopdracht_CarSelector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ageCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Techgrounds Opdrachten/loops_8c.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Techgrounds Opdrachten/loops_8c.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/loops_8c.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/loops_8c.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,13 +91,20 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Test" />
   </component>
-  <component name="RunManager" selected="Application.loops_8c">
+  <component name="RunManager" selected="Application.ageCalculator">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Techgrounds Opdrachten" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ageCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ageCalculator" />
+      <module name="Techgrounds Opdrachten" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -122,9 +127,11 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.loops_8b" />
       <item itemvalue="Application.loops_8c" />
+      <item itemvalue="Application.ageCalculator" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ageCalculator" />
         <item itemvalue="Application.loops_8c" />
         <item itemvalue="Application.loops_8b" />
         <item itemvalue="Application.Main" />
