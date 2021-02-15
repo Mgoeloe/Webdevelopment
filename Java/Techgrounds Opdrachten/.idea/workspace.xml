@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09bbe071-d9df-48fd-8814-f090a9fdea73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ageCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Opdrachten week 2/Opdrachten week 2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Opdrachten week 2/src/animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Opdrachten week 2/src/bear.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Javascript/6. Loops and Iterations/Opdracht 9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Javascript/7. Objects/Opdracht 7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Javascript/Eindopdracht/Eindopdracht.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Javascript/Eindopdracht/Eindopdracht.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
