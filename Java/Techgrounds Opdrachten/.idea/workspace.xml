@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09bbe071-d9df-48fd-8814-f090a9fdea73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Opdrachten week 2/Opdrachten week 2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Opdrachten week 2/src/animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Opdrachten week 2/src/bear.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Opdrachten week 2/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Opdrachten week 2/out/production/Opdrachten week 2/animals.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Opdrachten week 2/src/animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Opdrachten week 2/src/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Opdrachten week 2/src/bear.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Opdrachten week 2/src/Bear.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Javascript/6. Loops and Iterations/Opdracht 9.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Javascript/7. Objects/Opdracht 7.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Javascript/Eindopdracht/Eindopdracht.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Javascript/Eindopdracht/Eindopdracht.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +30,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1oEzCciW0IQnTzswRO9ChS03Jvr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -95,6 +93,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Test" />
   </component>
   <component name="RunManager" selected="Application.ageCalculator">
@@ -166,5 +165,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
