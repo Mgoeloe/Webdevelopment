@@ -1,4 +1,4 @@
-public class Animal {
+public class Animal extends Main {
 // vars
     String naam;
     int leeftijd;
