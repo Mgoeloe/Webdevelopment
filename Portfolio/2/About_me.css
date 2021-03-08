@@ -27,13 +27,13 @@ nav{
     opacity: 50%;
     color: whitesmoke;
     width: 100%;
-    padding: 2% 0% 2% 0%;
+    padding: 1% 0% 1% 0%;
     
 } 
 
 nav a{
     color: whitesmoke;
-    font-size: x-large;
+    font-size: large;
     margin-left: 2%;
     text-decoration: none;
 }
@@ -48,6 +48,7 @@ nav a{
   opacity: 50%;
   color: whitesmoke;
   width: 100%;
+  padding: 1% 0% 1% 0%;
   /* padding: 2% 0% 2% 2%; */
 }
 
@@ -57,7 +58,7 @@ nav a{
   position: relative;
   /* left: 30%; */
   color: whitesmoke;
-  font-size: large;
+  font-size: x-large;
   /* margin-right: 2%; */
   /* text-decoration: none; */
   width: 100%;
