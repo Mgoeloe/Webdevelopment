@@ -68,7 +68,8 @@ nav a{
   height: 300px;
   width: 750px;
   top: 60px;
-  left: calc(50% - 375px);
+  left: calc(25%);
+  /* left: calc(50% - 475px); */
   display: flex;
 }
 
