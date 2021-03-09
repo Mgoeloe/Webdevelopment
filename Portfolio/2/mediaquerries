@@ -1,0 +1,31 @@
+@media  screen and (max-device-width: 1000px) {
+  .container { 
+    /* align-self: center; */
+    /* width: 33%; */
+    
+    transform: scale(0.7);
+
+    left: calc(33%)
+  }
+}
+
+@media  screen and (max-device-width: 650px) {
+  .container { 
+    /* align-self: center; */
+    /* width: 33%; */
+
+    transform: scale(0.5);
+    left: calc(33%)
+  }
+
+  @media  screen and (max-device-width: 400px) {
+    .container { 
+     
+      /* align-self: center; */
+      /* width: 33%; */
+
+      transform: scale(0.3);
+      left: calc(33%)
+    }
+  }
+}
