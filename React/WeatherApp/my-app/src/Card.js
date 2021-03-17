@@ -27,7 +27,7 @@ const Card = ({city}) => {
               {weathercards && (
                 <div>
                   <h1>{weathercards.name}</h1>
-                  <img className='icon' src={`http://openweathermap.org/img/wn/${weathercards.weather[0].icon}@2x.png`} alt='icon' ></img>
+                  <img className='icon' src={`http://openweathermap.org/img/wn/${weathercards.weather[0].icon}@4x.png`} alt='icon' ></img>
                   <h2>{weathercards.main.temp} &deg;C</h2>
                   <h3>Min temp: {weathercards.main.temp_min} &deg;C</h3>
                   <h3>Max temp: {weathercards.main.temp_max} &deg;C</h3>

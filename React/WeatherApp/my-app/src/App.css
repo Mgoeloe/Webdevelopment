@@ -13,12 +13,16 @@
   border-radius: 50px;
 }
 
-.weathercard img {
+/* .weathercard img {
 transform: scale(2) ;
-}
+} */
 
 /* .weathercard h2 {
   position: relative;
   left: 60px;
   bottom: 60px;
 } */
+
+.icons2 {
+  transform: scale(2) ;
+}
