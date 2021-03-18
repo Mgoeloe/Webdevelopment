@@ -8,16 +8,26 @@ const Card = ({city}) => {
     const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   
     const [weathercards, setWeathercards] = useState();
+    const [cardLon, setCardLon] = useState();
+    const [cardLat, setCardLat] = useState();
+    const [toggleState, setToggleState] = useState(null);
+
+    const toggle = () => {
+      setToggleState(!toggleState);
+    }
   
   
     const fetchData = async () => {
       const response = await axios.get(apiURL);
   
       setWeathercards(response.data);
+      setCardLon(response.data.coord.lon);
+      setCardLat(response.data.coord.lat);
     //   console.log(response);
     }
 
     console.log(weathercards);
+    
 
     return(
         <div>
@@ -27,13 +37,21 @@ const Card = ({city}) => {
               {weathercards && (
                 <div>
                   <h1>{weathercards.name}</h1>
-                  <img className='icon' src={`http://openweathermap.org/img/wn/${weathercards.weather[0].icon}@4x.png`} alt='icon' ></img>
+                  <img className='icons' src={`http://openweathermap.org/img/wn/${weathercards.weather[0].icon}@4x.png`} alt='icon' ></img>
                   <h2>{weathercards.main.temp} &deg;C</h2>
                   <h3>Min temp: {weathercards.main.temp_min} &deg;C</h3>
                   <h3>Max temp: {weathercards.main.temp_max} &deg;C</h3>
                   <h3>Vochtigheid: {weathercards.main.humidity}%</h3>
                   <br></br>
-                  <button>Details</button>
+                  <button onClick={toggle}>Details</button>
+
+                  <div className='toggle'>
+                    {toggleState ? <CardDetail lat={cardLat} lon={cardLon} name={weathercards.name}/> : null}
+                  </div>
+
+                  {/* {console.log(weathercards.coord.lon)} */}
+                  {/* {console.log(weathercards.coord.lat)} */}
+                  {console.log(cardLon, cardLat)}
                 </div>             
                               
               )}

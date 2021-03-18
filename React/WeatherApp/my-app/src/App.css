@@ -9,7 +9,11 @@
   text-align: center;
   margin: 30px;
   display: inline-block;
-  border: 1px ;
+  border-radius: 50px;
+}
+
+.detailCard {
+  background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
   border-radius: 50px;
 }
 
@@ -22,6 +26,11 @@ transform: scale(2) ;
   left: 60px;
   bottom: 60px;
 } */
+
+.icons {
+  margin-top: -10%;
+  margin-bottom: -10%;
+}
 
 .icons2 {
   transform: scale(2) ;

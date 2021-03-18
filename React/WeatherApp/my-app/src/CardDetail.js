@@ -5,7 +5,7 @@ import Collapsible from 'react-collapsible';
 import './CardDetails.css'
 
 
-const CardDetail = ({ lat, lon }) => {
+const CardDetail = ({ lat, lon, name }) => {
 
   const apiKey = '77bc13a3ad3deb011bf46df0dd99ca9b';
   const apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&exclude=minutely,hourly&appid=${apiKey}`;
@@ -29,23 +29,12 @@ const CardDetail = ({ lat, lon }) => {
   }
 
   console.log(weatherDetail);
-
-  // const d = new Date(date*1000);
-  // const n = d.toLocaleDateString();
-  // console.log(n);
-
   console.log(date);
 
   return (
-    <div className='weathercard'>
-      <h1>Den Haag</h1>
-      {/* {weatherDetail && (
-        <div>
-          <p>Datum: {n}</p>
-
-        </div>
-      )} */}
-
+    <div className='detailCard'>
+      <h1>{name}</h1>
+ 
       {date && 
         date.map((datum, index) => {
           const d = new Date(datum.dt*1000);
@@ -54,9 +43,9 @@ const CardDetail = ({ lat, lon }) => {
 
         return (
         <div key={uuid()}>
-          <Collapsible trigger=<div> {n} <img className='icons2' 
+          <Collapsible trigger={<div> {n} <img className='icons2' 
               src={`http://openweathermap.org/img/wn/${datum.weather[0].icon}.png`} alt='icon' ></img>
-              {datum.temp.day} &deg;C &dArr;</div>
+              {datum.temp.day} &deg;C &dArr;</div>}
           >
       
           <div className='tableDiv'>
@@ -69,7 +58,7 @@ const CardDetail = ({ lat, lon }) => {
                 <td>Night</td>
               </tr>
               <tr>
-                <td>Temp</td>
+                <td>Temperature</td>
                 <td>{datum.temp.morn}&deg;C</td>
                 <td>{datum.temp.day}&deg;C</td>
                 <td>{datum.temp.eve}&deg;C</td>
